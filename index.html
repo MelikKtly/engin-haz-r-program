@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amerikan Futbolu Takım Kamp Programı - Haftalık antrenman ve etkinlik takvimi">
+    <title>🏈 Kamp Programı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero / Header -->
+    <header class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🏈 AMERIKAN FUTBOLU</div>
+            <h1 class="hero-title">Kamp Programı</h1>
+            <p class="hero-subtitle">Isparta → Antalya &bull; 3 Günlük Yoğun Kamp</p>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="day-tabs" id="day-tabs">
+        <div class="tabs-inner">
+            <button class="tab active" data-day="friday" id="tab-friday">
+                <span class="tab-day">CUMA</span>
+                <span class="tab-desc">Varış & İlk Antrenman</span>
+            </button>
+            <button class="tab" data-day="saturday" id="tab-saturday">
+                <span class="tab-day">CUMARTESİ</span>
+                <span class="tab-desc">Çift Antrenman</span>
+            </button>
+            <button class="tab" data-day="sunday" id="tab-sunday">
+                <span class="tab-day">PAZAR</span>
+                <span class="tab-desc">Son Antrenman & Etkinlik</span>
+            </button>
+            <button class="tab" data-day="notes" id="tab-notes">
+                <span class="tab-day">📋 NOTLAR</span>
+                <span class="tab-desc">Kamp Kuralları</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+
+        <!-- CUMA -->
+        <section class="day-section active" id="day-friday">
+            <div class="day-header">
+                <div class="day-header-icon">🟢</div>
+                <div>
+                    <h2>Cuma</h2>
+                    <p>Varış, Yerleşme ve İlk Saha Antrenmanı</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-block travel">
+                    <div class="time-badge">10:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category travel-tag">🚌 Yolculuk</div>
+                        <h3>Ispartadan Yola Çıkış</h3>
+                        <p>Adliye yanı duraktan hareket</p>
+                    </div>
+                </div>
+
+                <div class="timeline-block travel">
+                    <div class="time-badge">13:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category travel-tag">🏨 Yerleşme</div>
+                        <h3>Otele Yerleşme</h3>
+                        <p>Oda yerleşimleri ve hazırlık</p>
+                    </div>
+                </div>
+
+                <div class="timeline-block training-header">
+                    <div class="time-badge accent">14:00 - 17:30</div>
+                    <div class="timeline-card highlight">
+                        <div class="card-category training-tag">🏈 Saha Antrenmanı</div>
+                        <h3>Saha Antrenmanı</h3>
+                        <div class="sub-schedule">
+                            <div class="sub-item">
+                                <span class="sub-time">14:00 – 14:30</span>
+                                <span class="sub-title">Tüm Takım Birlikte Isınma</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">14:40 – 15:10</span>
+                                <span class="sub-title">Mevkisel Isınma</span>
+                                <span class="sub-desc">Mevkiye göre ayrılıp ısınma</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">15:20 – 15:50</span>
+                                <span class="sub-title">Mevkisel Birleşme</span>
+                                <span class="sub-desc">QB-WR, O-LINE – D-LINE vb.</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">16:00 – 17:15</span>
+                                <span class="sub-title">Taktik Antrenmanı</span>
+                                <span class="sub-desc">Ofans-Defans birleşmesi ve taktik çalışması</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge">17:20</div>
+                    <div class="timeline-card">
+                        <div class="card-category review-tag">📊 Değerlendirme</div>
+                        <h3>Gün Sonu Değerlendirmesi</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge">18:10</div>
+                    <div class="timeline-card">
+                        <div class="card-category travel-tag">🚌 Dönüş</div>
+                        <h3>Otele Dönüş İçin Yola Çıkış</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block free">
+                    <div class="time-badge">18:10 - 21:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category free-tag">🍽️ Serbest</div>
+                        <h3>Serbest Zaman & Yemek</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge">21:15 - 22:30</div>
+                    <div class="timeline-card">
+                        <div class="card-category video-tag">🎬 Video Study</div>
+                        <h3>Video Study</h3>
+                        <p>Bu sene oynadığımız maçların değerlendirilmesi</p>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge warning">23:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category rest-tag">🌙 Dinlenme</div>
+                        <h3>Yat Saati</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUMARTESİ -->
+        <section class="day-section" id="day-saturday">
+            <div class="day-header">
+                <div class="day-header-icon">🔵</div>
+                <div>
+                    <h2>Cumartesi</h2>
+                    <p>Çift Antrenman Günü – Sabah Saha, Akşam Kondisyon</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-block">
+                    <div class="time-badge">06:00 - 07:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category free-tag">🍳 Kahvaltı</div>
+                        <h3>Kahvaltı</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block travel">
+                    <div class="time-badge">07:30</div>
+                    <div class="timeline-card">
+                        <div class="card-category travel-tag">🚌 Hareket</div>
+                        <h3>Otelden Sahaya Geçiş</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block training-header">
+                    <div class="time-badge accent">08:00 - 11:00</div>
+                    <div class="timeline-card highlight">
+                        <div class="card-category training-tag">🏈 Sabah Antrenmanı</div>
+                        <h3>Saha Antrenmanı</h3>
+                        <div class="sub-schedule">
+                            <div class="sub-item">
+                                <span class="sub-time">08:00 – 08:30</span>
+                                <span class="sub-title">Tüm Takım Birlikte Isınma</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">08:40 – 09:10</span>
+                                <span class="sub-title">Mevkisel Isınma</span>
+                                <span class="sub-desc">Mevkiye göre ayrılıp ısınma</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">09:20 – 09:50</span>
+                                <span class="sub-title">Mevkisel Birleşme</span>
+                                <span class="sub-desc">QB-WR, O-LINE – D-LINE vb.</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">10:00 – 11:00</span>
+                                <span class="sub-title">Taktik Antrenmanı</span>
+                                <span class="sub-desc">Ofans-Defans birleşmesi ve taktik çalışması</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge">11:00 - 11:15</div>
+                    <div class="timeline-card">
+                        <div class="card-category review-tag">📊 Değerlendirme</div>
+                        <h3>Gün Sonu Değerlendirmesi</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge">11:20</div>
+                    <div class="timeline-card">
+                        <div class="card-category travel-tag">🚌 Dönüş</div>
+                        <h3>Otele Dönüş İçin Yola Çıkış</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block free">
+                    <div class="time-badge">11:40 - 14:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category free-tag">☀️ Serbest</div>
+                        <h3>Serbest Zaman</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge">14:00 - 16:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category video-tag">🎬 Video Study</div>
+                        <h3>Video Study</h3>
+                        <p>Oynayacağımız rakibin maç değerlendirmesi</p>
+                    </div>
+                </div>
+
+                <div class="timeline-block free">
+                    <div class="time-badge">16:00 - 20:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category free-tag">🍽️ Serbest & Yemek</div>
+                        <h3>Serbest Zaman & Akşam Yemeği</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block travel">
+                    <div class="time-badge">20:00 - 20:30</div>
+                    <div class="timeline-card">
+                        <div class="card-category travel-tag">🚶 Hareket</div>
+                        <h3>Otelden Beach Park'a Gidiş</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block training-header">
+                    <div class="time-badge accent">20:40 - 22:00</div>
+                    <div class="timeline-card highlight">
+                        <div class="card-category kondisyon-tag">🏃 Kondisyon</div>
+                        <h3>Kondisyon İdmanı</h3>
+                        <p>Koşu, EMOM, Mobilite çalışması</p>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge warning">23:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category rest-tag">🌙 Dinlenme</div>
+                        <h3>Yat Vakti</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAZAR -->
+        <section class="day-section" id="day-sunday">
+            <div class="day-header">
+                <div class="day-header-icon">🔴</div>
+                <div>
+                    <h2>Pazar</h2>
+                    <p>Son Antrenman ve Toplu Etkinlik</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-block">
+                    <div class="time-badge">06:00 - 07:00</div>
+                    <div class="timeline-card">
+                        <div class="card-category free-tag">🍳 Kahvaltı</div>
+                        <h3>Kahvaltı</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block travel">
+                    <div class="time-badge">07:30</div>
+                    <div class="timeline-card">
+                        <div class="card-category travel-tag">🚌 Hareket</div>
+                        <h3>Otelden Sahaya Geçiş</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block training-header">
+                    <div class="time-badge accent">08:00 - 11:00</div>
+                    <div class="timeline-card highlight">
+                        <div class="card-category training-tag">🏈 Sabah Antrenmanı</div>
+                        <h3>Saha Antrenmanı</h3>
+                        <div class="sub-schedule">
+                            <div class="sub-item">
+                                <span class="sub-time">08:00 – 08:30</span>
+                                <span class="sub-title">Tüm Takım Birlikte Isınma</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">08:40 – 09:10</span>
+                                <span class="sub-title">Mevkisel Isınma</span>
+                                <span class="sub-desc">Mevkiye göre ayrılıp ısınma</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">09:20 – 09:50</span>
+                                <span class="sub-title">Mevkisel Birleşme</span>
+                                <span class="sub-desc">QB-WR, O-LINE – D-LINE vb.</span>
+                            </div>
+                            <div class="sub-item">
+                                <span class="sub-time">10:00 – 11:00</span>
+                                <span class="sub-title">Taktik Antrenmanı</span>
+                                <span class="sub-desc">Ofans-Defans birleşmesi ve taktik çalışması</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="time-badge">11:00 - 11:15</div>
+                    <div class="timeline-card">
+                        <div class="card-category review-tag">📊 Değerlendirme</div>
+                        <h3>Gün Sonu Değerlendirmesi</h3>
+                    </div>
+                </div>
+
+                <div class="timeline-block free">
+                    <div class="time-badge">11:15+</div>
+                    <div class="timeline-card">
+                        <div class="card-category free-tag">🏖️ Etkinlik</div>
+                        <h3>Toplu Etkinlik</h3>
+                        <p>Antrenman sonrası serbest zaman, isteyenlerle birlikte toplu etkinlik (denize gitme vb.)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTLAR -->
+        <section class="day-section" id="day-notes">
+            <div class="day-header">
+                <div class="day-header-icon">📋</div>
+                <div>
+                    <h2>Kamp Notları & Kurallar</h2>
+                    <p>Tüm oyuncuların uyması gereken kurallar</p>
+                </div>
+            </div>
+
+            <div class="notes-grid">
+                <div class="note-card danger">
+                    <div class="note-icon">🚫</div>
+                    <h3>Tütün & Alkol Yasağı</h3>
+                    <p>Kamp süresince takım etkinlikleri sırasında (serbest zamanlar hariç) tütün ve alkol ürünleri kullanımı yasaktır.</p>
+                </div>
+
+                <div class="note-card danger">
+                    <div class="note-icon">⏰</div>
+                    <h3>Disiplin</h3>
+                    <p>Kamp saatlerine uymayan oyuncular hakkında disiplin işlemi uygulanacaktır.</p>
+                </div>
+
+                <div class="note-card warning">
+                    <div class="note-icon">🪖</div>
+                    <h3>Ekipman Zorunluluğu</h3>
+                    <p>Tüm oyuncular antrenmanlara kendi shoulder pad ve kasklarıyla katılmak zorundadır.</p>
+                </div>
+
+                <div class="note-card info">
+                    <div class="note-icon">👕</div>
+                    <h3>Forma Kullanımı</h3>
+                    <p>Geçen seneki beyaz ve mavi formalar hücum–savunma ayrımı için kullanılacaktır. Çift sıfır (00) idman tişörtleri ise kondisyon antrenmanlarında giyilecektir.</p>
+                </div>
+
+                <div class="note-card info">
+                    <div class="note-icon">👔</div>
+                    <h3>Dress Code</h3>
+                    <p>Kamp süresince dress code siyah ve beyaz tişörtlerden oluşacaktır. Hangi gün hangi rengin giyileceği bir önceki akşam bildirilecektir. <strong>İlk gün tüm oyuncular siyah tişört ile gelecektir.</strong></p>
+                </div>
+
+                <div class="note-card danger">
+                    <div class="note-icon">🏨</div>
+                    <h3>Otelden Ayrılma Yasağı</h3>
+                    <p>Kamp süresince otelden ayrılmak yasaktır.</p>
+                </div>
+
+                <div class="note-card warning">
+                    <div class="note-icon">🏈</div>
+                    <h3>Ekipman Sorumluluğu</h3>
+                    <p>Toplar, call sheet'ler ve tahta <strong>hücum oyuncularının</strong>; dummy, lapa vb. antrenman ekipmanları ise <strong>savunma oyuncularının</strong> sorumluluğundadır.</p>
+                </div>
+
+                <div class="note-card warning">
+                    <div class="note-icon">👟</div>
+                    <h3>Koşu Antrenmanı Kıyafeti</h3>
+                    <p>Koşu antrenmanları için herkes kendi koşu ayakkabısını getirmek zorundadır. Beyaz çift sıfır (00) tişört, siyah şort ve beyaz çorap giyilecektir.</p>
+                </div>
+
+                <div class="note-card info">
+                    <div class="note-icon">🔴</div>
+                    <h3>QB Forması</h3>
+                    <p>QB oyuncuları taktik antrenmanlarda kırmızı forma giyecektir.</p>
+                </div>
+
+                <div class="note-card info">
+                    <div class="note-icon">📍</div>
+                    <h3>Antalya'dan Katılım</h3>
+                    <p>Kampa Antalya'dan katılan oyuncular için 08:00 ve 22:00 arası bütün program aynıdır.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>🏈 Kamp Programı &bull; Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
